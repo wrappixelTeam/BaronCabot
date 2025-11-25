@@ -1,0 +1,41 @@
+.header {
+    padding: 24px 0;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+    animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
+
+    @include media-breakpoint-down(lg) {
+        padding: 20px 0;
+    }
+
+    &.header-inner.fixed-header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+    }
+
+    &.fixed-header {
+        padding: 20px 0;
+        background-color: var(--bs-primary);
+
+    }
+    
+    .navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                gap: 24px;
+                .nav-item{
+                    .nav-link{
+                        padding: 0;
+                        font-weight: 500;
+                        color: var(--bs-white);
+
+                        &:hover{
+                            color: var(--bs-secondary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
