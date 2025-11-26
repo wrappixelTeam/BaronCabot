@@ -1,9 +1,11 @@
-.porject-img {}
-
 .porject-item .porject-img::before {
     content: "";
     display: block;
     padding-top: 89%;
+}
+
+.porject-item .porject-img {
+    cursor: pointer;
 }
 
 .porject-item .porject-img img {
@@ -37,9 +39,11 @@
 
 .vivere-residences-img img {
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
-.vivere-residences-img:hover img {
+.vivere-residences-img:hover img,
+.porject-item .porject-img:hover img {
     transform: scale(1.1);
 }
 
@@ -49,7 +53,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer;
     object-fit: cover;
 }
 
@@ -84,6 +87,18 @@
     background: #001B36CC;
 }
 
-.subscribe-email input::placeholder{
+.subscribe-email input::placeholder {
     color: var(--bs-white);
+}
+
+.mobile-offcanvas .nav-item.dropdown .dropdown-menu {
+    position: relative !important;
+    transform: none !important;
+    background-color: var(--bs-dark);
+}
+
+@include media-breakpoint-down(md) {
+    .predicted-house-price {
+        border-right: 0 !important;
+    }
 }

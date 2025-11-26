@@ -270,13 +270,17 @@ $form-check-input-checked-bg-color: var(--bs-primary
 $dropdown-border-radius: $border-radius-smd !default;
 $dropdown-border-width: 0 !default;
 $dropdown-item-padding-y: 6px !default;
-$dropdown-link-hover-bg: var(--bs-primary) !default;
+$dropdown-link-hover-bg: var(--bs-secondary) !default;
 $dropdown-link-hover-color: var(--bs-white) !default;
-$dropdown-link-active-bg: var(--bs-primary) !default;
+$dropdown-link-active-bg: var(--bs-secondary) !default; 
 $dropdown-link-active-color: var(--bs-white) !default;
+$dropdown-box-shadow: 0px -30px 60px -40px #101E340D !default;  
 $link-color: $dark !default;
 
 $link-hover-color: $primary !default;
+
+// Offcanvas
+$offcanvas-horizontal-width: 360px;
 
 // Accordion
 $accordion-bg: transparent;
