@@ -8,6 +8,7 @@ $gray-100: #9F9F9F !default;
 $gray-200: #101E3480 !default;
 $gray-300: #001B36CC !default;
 $gray-400: #001B36 !default;
+$gray-500: #F6F8F9 !default;
 $black: #000 !default;
 
 // Color
@@ -27,7 +28,7 @@ $indigo: $indigo !default;
 $light: $gray-100 !default;
 $muted: $gray-300 !default;
 $dark: $gray-400 !default;
-$light-gray: $gray-200 !default;
+$light-gray: $gray-500 !default;
 
 // Theme Colorss
 $theme-colors: (
@@ -153,6 +154,8 @@ $font-sizes: (
   14: 60px,
   15: 80px,
   16: 104px,
+  17: 48px,
+  18: 36px,
   ) !default;
 $font-size-base: 1.125rem !default;
 
