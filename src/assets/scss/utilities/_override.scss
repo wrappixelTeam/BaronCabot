@@ -18,6 +18,10 @@
     border-radius: 12px;
 }
 
+.rounded-16 {
+    border-radius: 16px;
+}
+
 .rounded-20 {
     border-radius: 20px;
 }
@@ -25,8 +29,8 @@
 .text-truncate-2 {
     overflow: hidden;
     display: block;
-    max-height: 4.4rem;
-    -webkit-line-clamp: 2;
+    max-height: 175px;
+    -webkit-line-clamp: 6;
     display: box;
     display: -webkit-box;
     -webkit-box-orient: vertical;
