@@ -13,7 +13,8 @@
 .vivere-residences img,
 .banner-slider .item img,
 .porject-item .porject-img img,
-.vivere-residences-img img {
+.vivere-residences-img img,
+.available-units-item-img img {
     transition: all 0.2s ease;
     cursor: pointer;
 }
@@ -23,7 +24,8 @@
 .vivere-residences>img,
 .banner-slider .item>img,
 .porject-item .porject-img>img,
-.vivere-residences-img>img {
+.vivere-residences-img>img,
+.available-units-item-img>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +39,8 @@
 .banner-slider .item:hover>img,
 .vivere-residences:hover img,
 .gallery-slider .item:hover img,
-.construction-update-slider .item:hover img {
+.construction-update-slider .item:hover img,
+.available-units-item-img:hover img {
     transform: scale(1.1);
 }
 
@@ -183,4 +186,20 @@
 .social-media .social-icon:hover {
     background-color: var(--bs-primary) !important;
     color: var(--bs-white) !important;
+}
+
+.available-units .nav-pills .nav-link {
+    color: var(--bs-dark);
+}
+
+.available-units .nav-pills .nav-link.active,
+.available-units .nav-pills .nav-link:hover {
+    background-color: rgba($white, 0.4);
+    font-weight: 600;
+}
+
+.available-units-item-img::before {
+    content: "";
+    display: block;
+    padding-top: 61%;
 }

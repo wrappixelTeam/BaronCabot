@@ -139,7 +139,7 @@
           <div class="col-xxl-6">
             <div class="vstack gap-9 gap-sm-5 gap-xxl-16 me-xxl-3">
               <div class="vstack gap-9">
-                <div class="vstack align-items-start gap-3 text-center text-xl-start">
+                <div class="vstack align-items-start gap-3">
                   <span class="badge bg-secondary-subtle text-white text-uppercase fs-3" data-aos="fade-up"
                     data-aos-delay="200" data-aos-duration="1000">Under Construction</span>
                   <h1 class="text-white mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -149,7 +149,8 @@
                     penthouses near Cornbrook Metrolink Station, conveniently located between
                     Manchester City Centre & MediaCityUK</p>
                 </div>
-                <div class="hstack gap-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="hstack flex-wrap gap-9 gap-lg-5" data-aos="fade-up" data-aos-delay="400"
+                  data-aos-duration="1000">
                   <div class="vstack flex-grow-0 gap-1">
                     <h6 class="fw-medium fs-5 text-white text-opacity-75 mb-0">Starting from</h6>
                     <h4 class="text-white mb-0">£354,620.00</h4>
@@ -163,15 +164,16 @@
                     <h4 class="text-white mb-0">48 Months</h4>
                   </div>
                 </div>
-                <div class="hstack gap-4 justify-content-center justify-content-xl-start" data-aos="fade-up"
-                  data-aos-delay="400" data-aos-duration="1000">
+                <div class="hstack gap-4 justify-content-start" data-aos="fade-up" data-aos-delay="400"
+                  data-aos-duration="1000">
                   <a href="javascript:void(0)" class="btn btn-secondary text-dark">Enquire Now</a>
                   <a href="javascript:void(0)" class="link-hover text-white border-bottom">Download Guide</a>
                 </div>
               </div>
-              <div class="hstack border border-white border-opacity-10 p-9 rounded-2" data-aos="fade-up"
+              <div class="hstack flex-wrap gap-4 border border-white border-opacity-10 p-9 rounded-2" data-aos="fade-up"
                 data-aos-delay="500" data-aos-duration="1000">
-                <div class="hstack gap-3 border-white border-end border-opacity-25 pe-md-10 me-md-10">
+                <div
+                  class="predicted-house-price hstack gap-3 border-white border-end border-opacity-25 pe-md-10 me-md-7">
                   <img src="../assets/images/svgs/icon-apartments.svg" class="img-fluid flex-shrink-0" alt="apartments"
                     width="40" height="40">
                   <div class="vstack flex-grow-0 gap-1">
@@ -179,7 +181,8 @@
                     <h6 class="fw-medium fs-5 text-white text-opacity-75 mb-0">Appartments</h6>
                   </div>
                 </div>
-                <div class="hstack gap-3 border-white border-end border-opacity-25 pe-md-10 me-md-10">
+                <div
+                  class="predicted-house-price hstack gap-3 border-white border-end border-opacity-25 pe-md-10 me-md-7">
                   <img src="../assets/images/svgs/icon-unit-size.svg" class="img-fluid flex-shrink-0" alt="apartments"
                     width="40" height="40">
                   <div class="vstack flex-grow-0 gap-1">
@@ -187,7 +190,7 @@
                     <h6 class="fw-medium fs-5 text-white text-opacity-75 mb-0">Unit Size</h6>
                   </div>
                 </div>
-                <div class="hstack gap-3">
+                <div class="predicted-house-price hstack gap-3">
                   <img src="../assets/images/svgs/icon-clock.svg" class="img-fluid flex-shrink-0" alt="apartments"
                     width="40" height="40">
                   <div class="vstack flex-grow-0 gap-1">
@@ -331,12 +334,739 @@
       </div>
     </section>
 
+    <!--  Available Units Section -->
+    <section class="available-units">
+      <ul class="nav nav-pills bg-secondary justify-content-center px-2 py-7 gap-6" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12 active" id="pills-available-units-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-available-units" type="button" role="tab" aria-controls="pills-available-units"
+            aria-selected="true">Available Units</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12" id="pills-project-highlights-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-project-highlights" type="button" role="tab" aria-controls="pills-project-highlights"
+            aria-selected="false">Project Highlights</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12" id="pills-amenities-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-amenities" type="button" role="tab" aria-controls="pills-amenities"
+            aria-selected="false">Amenities</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12" id="pills-gallery-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-gallery" type="button" role="tab" aria-controls="pills-gallery"
+            aria-selected="false">Gallery</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12" id="pills-construction-update-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-construction-update" type="button" role="tab"
+            aria-controls="pills-construction-update" aria-selected="false">Construction Update</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12" id="pills-location-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-location" type="button" role="tab" aria-controls="pills-location"
+            aria-selected="false">Location</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-3 py-2 rounded-12" id="pills-enquire-now-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-enquire-now" type="button" role="tab" aria-controls="pills-enquire-now"
+            aria-selected="false">Enquire Now</button>
+        </li>
+      </ul>
+      <div class="container">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-available-units" role="tabpanel"
+            aria-labelledby="pills-available-units-tab" tabindex="0">
+            <div class="vstack gap-10 gap-md-5 pt-9 pt-md-5 pt-lg-12 pt-xl-14">
+              <div class="vstack align-items-center text-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Available
+                  Units</h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-project-highlights" role="tabpanel"
+            aria-labelledby="pills-project-highlights-tab" tabindex="0">
+            <div class="vstack gap-5 pt-14">
+              <div class="vstack align-items-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Project Highlights
+                </h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-amenities" role="tabpanel" aria-labelledby="pills-amenities-tab"
+            tabindex="0">
+            <div class="vstack gap-5 pt-14">
+              <div class="vstack align-items-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Amenities</h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery-tab"
+            tabindex="0">
+            <div class="vstack gap-5 pt-14">
+              <div class="vstack align-items-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Gallery</h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-construction-update" role="tabpanel"
+            aria-labelledby="pills-construction-update-tab" tabindex="0">
+            <div class="vstack gap-5 pt-14">
+              <div class="vstack align-items-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Construction Update
+                </h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-location" role="tabpanel" aria-labelledby="pills-location-tab"
+            tabindex="0">
+            <div class="vstack gap-5 pt-14">
+              <div class="vstack align-items-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Location</h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-enquire-now" role="tabpanel" aria-labelledby="pills-enquire-now-tab"
+            tabindex="0">
+            <div class="vstack gap-5 pt-14">
+              <div class="vstack align-items-center gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">select your preferred one</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Enquire Now</h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">The best units
+                  currently available in this stunning project.</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-3.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          1 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£268,500</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card bg-light-gray available-units-item position-relative overflow-hidden mb-0"
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="available-units-item-img position-relative overflow-hidden">
+                      <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
+                    </div>
+                    <div class="card-body p-md-10 vstack align-items-center gap-8">
+                      <div class="hstack justify-content-center gap-3">
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="cil:bed" class="fs-9 hstack"></iconify-icon>
+                          2 bed apartment
+                        </span>
+                        <span
+                          class="badge text-primary fw-medium shadow-sm fs-5 rounded-pill py-2 px-3 hstack gap-2 w-fit">
+                          <iconify-icon icon="tabler:rosette-discount" class="fs-9 hstack"></iconify-icon>
+                          10% Deposit
+                        </span>
+                      </div>
+                      <h5 class="mb-0 fw-medium">Prices from <span class="fw-bold">£366,000</span></h5>
+                      <a href="#" class="btn btn-secondary text-dark">Enquire Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Key Point Section -->
+    <section class="key-point py-10 py-md-5 py-lg-12 py-xl-12">
+      <div class="container">
+        <div class="row gap-10 gap-md-5 gap-xl-0 align-items-center">
+          <div class="col-xl-6">
+            <div class="vstack gap-10 gap-md-5 gap-xl-12">
+              <div class="vstack align-items-start gap-8">
+                <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">Vivere Residences - Key Points</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">UK Property Investment
+                  Opportunities for People Like Yourself
+                </h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Development Address: 70
+                  Cornbrook Rd, Manchester, M15 4WB</p>
+              </div>
+              <div class="vstack" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <p class="mb-0 text-dark">As seen on:</p>
+                <div class="hstack flex-wrap gap-3">
+                  <img src="../assets/images/svgs/ncb-news.svg" alt="news" class="img-fluid">
+                  <img src="../assets/images/svgs/daily-news.svg" alt="news" class="img-fluid">
+                </div>
+                <div class="hstack flex-wrap gap-3">
+                  <img src="../assets/images/svgs/9-news.svg" alt="news" class="img-fluid">
+                  <img src="../assets/images/svgs/sky-news.svg" alt="news" class="img-fluid">
+                  <img src="../assets/images/svgs/cbc-news.svg" alt="news" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="card bg-light-gray mb-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <div class="card-body p-xl-5">
+                <form action="" method="post">
+                  <h5 class="mb-9">Request Callback</h5>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-4">
+                        <label for="Fname" class="form-label">First Name *</label>
+                        <input type="text" name="Fname" id="Fname" placeholder="" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-4">
+                        <label for="Lname" class="form-label">Last Name *</label>
+                        <input type="text" name="Lname" id="Lname" placeholder="" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="exampleInputEmail" class="form-label">Email *</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" placeholder=""
+                          aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="quantity" class="form-label">Phone Number *</label>
+                        <input type="text" class="form-control" id="quantity" placeholder="+1 503 123 456 7890">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <p class="mb-0 fs-4">
+                          By submitting this form, you agree to our Terms and acknowledge our Privacy Policy.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-dark w-100">Request Callback</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--  Project Highlights Section -->
     <section class="project-highlights bg-light-gray py-10 py-md-5 py-lg-12 py-xl-14">
       <div class="container">
         <div class="vstack gap-5">
           <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-xl-8">
               <div class="vstack align-items-start gap-8">
                 <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
                   data-aos-delay="200" data-aos-duration="1000">Vivere Residences - Key Points</span>
@@ -351,16 +1081,18 @@
                   living with a touch of history.</p>
                 <p class="mb-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Development Address: 70
                   Cornbrook Rd, Manchester, M15 4WB</p>
-                <a href="javascript:void(0)" class="link-hover text-dark border-bottom border-dark fw-semibold" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Show
+                <a href="javascript:void(0)" class="link-hover text-dark border-bottom border-dark fw-semibold"
+                  data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Show
                   More</a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <img src="../assets/images/backgrounds/undraw-sweet-home.png" alt="undraw-sweet-home" class="img-fluid" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <div class="col-xl-4">
+              <img src="../assets/images/backgrounds/undraw-sweet-home.png" alt="undraw-sweet-home" class="img-fluid"
+                data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
               <div class="card rounded-2 w-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="card-body p-9 hstack">
                   <div class="hstack gap-7">
@@ -374,7 +1106,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
               <div class="card rounded-2 w-100" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div class="card-body p-9 hstack">
                   <div class="hstack gap-7">
@@ -388,7 +1120,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
               <div class="card rounded-2 w-100" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="card-body p-9 hstack">
                   <div class="hstack gap-7">
@@ -402,7 +1134,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
               <div class="card rounded-2 w-100" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                 <div class="card-body p-9 hstack">
                   <div class="hstack gap-7">
@@ -417,7 +1149,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
               <div class="card rounded-2 w-100" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 <div class="card-body p-9 hstack">
                   <div class="hstack gap-7">
@@ -431,8 +1163,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card rounded-2 w-100" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <div class="col-lg-6 col-xl-4 d-flex align-items-stretch">
+              <div class="card rounded-2 w-100 mb-0" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <div class="card-body p-9 hstack">
                   <div class="hstack gap-7">
                     <div
@@ -447,15 +1179,16 @@
             </div>
           </div>
           <div class="card rounded-5 mb-n21">
-            <div class="card-body p-10">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="vivere-residences position-relative overflow-hidden rounded-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <div class="card-body p-xxl-10">
+              <div class="row gap-10 gap-md-5 gap-xl-0 align-items-center">
+                <div class="col-xl-6">
+                  <div class="vivere-residences position-relative overflow-hidden rounded-4" data-aos="zoom-in"
+                    data-aos-delay="200" data-aos-duration="1000">
                     <img src="../assets/images/property/property-2.jpg" alt="property" class="img-fluid">
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="vstack align-items-start gap-8 ms-lg-10">
+                <div class="col-xl-6">
+                  <div class="vstack align-items-start gap-8 ms-xll-10">
                     <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
                       data-aos-delay="200" data-aos-duration="1000">Vivere Residences - Key Points</span>
                     <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Vivere Residences
@@ -480,8 +1213,8 @@
 
     <!--  Amenities Section -->
     <section class="amenities bg-dark pt-21">
-      <div class="container mb-11">
-        <div class="vstack gap-11">
+      <div class="container mb-8 mb-md-11">
+        <div class="vstack gap-10 gap-md-5 gap-xl-11">
           <div class="vstack align-items-center gap-8">
             <span class="badge bg-secondary-subtle text-white text-uppercase fs-3" data-aos="fade-up"
               data-aos-delay="100" data-aos-duration="1000">facilities</span>
@@ -489,8 +1222,9 @@
           </div>
           <div class="amenities-items">
             <div class="row justify-content-center">
-              <div class="col">
-                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4 col-xl">
+                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up"
+                  data-aos-delay="100" data-aos-duration="1000">
                   <div class="card-body p-lg-10 vstack align-items-center gap-8">
                     <img src="../assets/images/svgs/icon-cinema.svg" alt="cinema" width="48" height="48"
                       class="img-fluid">
@@ -501,8 +1235,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4 col-xl">
+                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up"
+                  data-aos-delay="200" data-aos-duration="1000">
                   <div class="card-body p-lg-10 vstack align-items-center gap-8">
                     <img src="../assets/images/svgs/icon-private-dining.svg" alt="private-dining" width="48" height="48"
                       class="img-fluid">
@@ -513,8 +1248,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4 col-xl">
+                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up"
+                  data-aos-delay="300" data-aos-duration="1000">
                   <div class="card-body p-lg-10 vstack align-items-center gap-8">
                     <img src="../assets/images/svgs/icon-cafe.svg" alt="cafe" width="48" height="48" class="img-fluid">
                     <div class="vstack align-items-center gap-1">
@@ -524,8 +1260,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4 col-xl">
+                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up"
+                  data-aos-delay="400" data-aos-duration="1000">
                   <div class="card-body p-lg-10 vstack align-items-center gap-8">
                     <img src="../assets/images/svgs/icon-gym.svg" alt="gym" width="48" height="48" class="img-fluid">
                     <div class="vstack align-items-center gap-1">
@@ -535,8 +1272,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4 col-xl">
+                <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up"
+                  data-aos-delay="500" data-aos-duration="1000">
                   <div class="card-body p-lg-10 vstack align-items-center gap-8">
                     <img src="../assets/images/svgs/icon-working-spaces.svg" alt="working-spaces" width="48" height="48"
                       class="img-fluid">
@@ -550,9 +1288,10 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-lg-10">
-                <div class="row">
-                  <div class="col">
-                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 col-lg-4 col-xl">
+                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2"
+                      data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                       <div class="card-body p-lg-10 vstack align-items-center gap-8">
                         <img src="../assets/images/svgs/icon-apartments-2.svg" alt="apartments" width="48" height="48"
                           class="img-fluid">
@@ -563,8 +1302,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                  <div class="col-md-6 col-lg-4 col-xl">
+                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2"
+                      data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
                       <div class="card-body p-lg-10 vstack align-items-center gap-8">
                         <img src="../assets/images/svgs/icon-starting-price.svg" alt="starting-price" width="48"
                           height="48" class="img-fluid">
@@ -575,8 +1315,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                  <div class="col-md-6 col-lg-4 col-xl">
+                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2"
+                      data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
                       <div class="card-body p-lg-10 vstack align-items-center gap-8">
                         <img src="../assets/images/svgs/icon-unit-size-2.svg" alt="unit-size" width="48" height="48"
                           class="img-fluid">
@@ -587,8 +1328,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                  <div class="col-md-6 col-lg-4 col-xl">
+                    <div class="card amenities-card border border-secondary border-opacity-10 rounded-2"
+                      data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
                       <div class="card-body p-lg-10 vstack align-items-center gap-8">
                         <img src="../assets/images/svgs/icon-completion-date.svg" alt="completion-date" width="48"
                           height="48" class="img-fluid">
@@ -643,9 +1385,9 @@
     </section>
 
     <!--  Key Contacts Section -->
-    <section class="key-contacts bg-light-gray pt-22 pb-11">
+    <section class="key-contacts bg-light-gray pt-21 pt-md-22 pb-4 pb-md-5 pb-xl-11">
       <div class="container">
-        <div class="vstack gap-5">
+        <div class="vstack gap-10 gap-md-5">
           <div class="vstack align-items-center gap-8">
             <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
               data-aos-delay="200" data-aos-duration="1000">Meet Our Experts</span>
@@ -653,22 +1395,23 @@
               Contacts</h2>
           </div>
           <div class="row">
-            <div class="col-lg-4">
-              <div class="card position-relative overflow-hidden rounded-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="col-lg-6 col-xxl-4">
+              <div class="card position-relative overflow-hidden rounded-2" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
                 <div class="card-body p-0">
                   <div class="row">
-                    <div class="col-6">
-                      <div class="position-relative hstack">
-                        <img src="../assets/images/profile/meet-contacts-1.png" alt="meet-contacts" class="img-fluid">
+                    <div class="col-sm-6">
+                      <div class="position-relative hstack justify-content-center">
+                        <img src="../assets/images/profile/meet-contacts-1.png" alt="meet-contacts" class="w-auto">
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="vstack gap-11 p-9 ps-0">
-                        <div class="vstack gap-1">
+                    <div class="col-sm-6">
+                      <div class="vstack gap-10 gap-sm-5 gap-xl-11 p-9 ps-sm-0">
+                        <div class="vstack gap-1 align-items-center align-items-sm-start">
                           <h5 class="mb-0">Mark Pearson</h5>
                           <p class="mb-0 text-dark text-opacity-50">Managing Director</p>
                         </div>
-                        <div class="vstack gap-1">
+                        <div class="vstack gap-1 align-items-center align-items-sm-start">
                           <a class="text-dark link-hover" href="mailto:mark@baroncabot.com">mark@baroncabot.com</a>
                           <a class="text-dark fs-7 link-hover" href="tel:+9711234567890">+971 123 456 7890</a>
                         </div>
@@ -678,22 +1421,23 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="card position-relative overflow-hidden rounded-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="col-lg-6 col-xxl-4">
+              <div class="card position-relative overflow-hidden rounded-2" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="1000">
                 <div class="card-body p-0">
                   <div class="row">
-                    <div class="col-6">
-                      <div class="position-relative hstack">
-                        <img src="../assets/images/profile/meet-contacts-2.png" alt="meet-contacts" class="img-fluid">
+                    <div class="col-sm-6">
+                      <div class="position-relative hstack justify-content-center">
+                        <img src="../assets/images/profile/meet-contacts-2.png" alt="meet-contacts" class="w-auto">
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="vstack gap-11 p-9 ps-0">
-                        <div class="vstack gap-1">
+                    <div class="col-sm-6">
+                      <div class="vstack gap-10 gap-sm-5 gap-xl-11 p-9 ps-sm-0">
+                        <div class="vstack gap-1 align-items-center align-items-sm-start">
                           <h5 class="mb-0">Mark Pearson</h5>
                           <p class="mb-0 text-dark text-opacity-50">Managing Director</p>
                         </div>
-                        <div class="vstack gap-1">
+                        <div class="vstack gap-1 align-items-center align-items-sm-start">
                           <a class="text-dark link-hover" href="mailto:mark@baroncabot.com">mark@baroncabot.com</a>
                           <a class="text-dark fs-7 link-hover" href="tel:+9711234567890">+971 123 456 7890</a>
                         </div>
@@ -703,22 +1447,23 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="card position-relative overflow-hidden rounded-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="col-lg-6 col-xxl-4">
+              <div class="card position-relative overflow-hidden rounded-2" data-aos="fade-up" data-aos-delay="300"
+                data-aos-duration="1000">
                 <div class="card-body p-0">
                   <div class="row">
-                    <div class="col-6">
-                      <div class="position-relative hstack">
-                        <img src="../assets/images/profile/meet-contacts-3.png" alt="meet-contacts" class="img-fluid">
+                    <div class="col-sm-6">
+                      <div class="position-relative hstack justify-content-center">
+                        <img src="../assets/images/profile/meet-contacts-3.png" alt="meet-contacts" class="w-auto">
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="vstack gap-11 p-9 ps-0">
-                        <div class="vstack gap-1">
+                    <div class="col-sm-6">
+                      <div class="vstack gap-10 gap-sm-5 gap-xl-11 p-9 ps-sm-0">
+                        <div class="vstack gap-1 align-items-center align-items-sm-start">
                           <h5 class="mb-0">Mark Pearson</h5>
                           <p class="mb-0 text-dark text-opacity-50">Managing Director</p>
                         </div>
-                        <div class="vstack gap-1">
+                        <div class="vstack gap-1 align-items-center align-items-sm-start">
                           <a class="text-dark link-hover" href="mailto:mark@baroncabot.com">mark@baroncabot.com</a>
                           <a class="text-dark fs-7 link-hover" href="tel:+9711234567890">+971 123 456 7890</a>
                         </div>
@@ -736,10 +1481,10 @@
     <!--  Construction Update Section -->
     <section class="construction-update py-10 py-md-5 py-lg-12 py-xl-14">
       <div class="container">
-        <div class="vstack gap-13">
+        <div class="vstack gap-10 gap-md-5 gap-xl-13">
           <div class="vstack gap-5">
             <div class="row justify-content-center">
-              <div class="col-lg-9">
+              <div class="col-xxl-9">
                 <div class="vstack align-items-center text-center gap-8">
                   <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
                     data-aos-delay="200" data-aos-duration="1000">Vivere Residences Updates</span>
@@ -806,9 +1551,9 @@
             </div>
           </div>
           <div class="position-relative overflow-hidden rounded-3 p-7 bg-dark">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <div class="vstack align-items-start gap-8 p-5">
+            <div class="row gap-4 gap-xl-0 align-items-center">
+              <div class="col-xl-6">
+                <div class="vstack align-items-start gap-8 p-4 p-xxl-5">
                   <span class="badge bg-secondary-subtle text-white text-uppercase fs-3" data-aos="fade-up"
                     data-aos-delay="100" data-aos-duration="1000">Vivere Residences Updates</span>
                   <h2 class="mb-0 text-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Vivere
@@ -825,7 +1570,7 @@
                     data-aos-delay="400" data-aos-duration="1000">Enquire Now</a>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-xl-6">
                 <iframe class="position-relative overflow-hidden rounded-2"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.928441189421!2d-2.2693138229262173!3d53.469738965483316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae1dadef8837%3A0xad234bcefe12ef18!2s70%20Cornbrook%20Rd%2C%20Manchester%20M15%204WB%2C%20UK!5e0!3m2!1sen!2sin!4v1764230551264!5m2!1sen!2sin"
                   width="100%" height="512" style="border:0;" allowfullscreen="" loading="lazy"
@@ -841,23 +1586,33 @@
     <section class="property bg-primary py-10 py-md-5"
       style="background-image: url(../assets/images/backgrounds/property-bg.png); background-size: cover; background-position: center;">
       <div class="container">
-
         <div class="row align-items-center">
-          <div class="col-xl-6">
+
+          <div class="col-xl-6 mb-4 mb-xl-0">
             <div class="position-relative text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               <img src="../assets/images/property/news-property.png" alt="news-property" class="img-fluid">
             </div>
           </div>
+
           <div class="col-xl-6">
-            <div class="vstack align-items-start gap-8">
+            <div class="vstack align-items-start gap-4">
+
               <span class="badge bg-secondary-subtle text-white text-uppercase fs-3" data-aos="fade-up"
-                data-aos-delay="100" data-aos-duration="1000">Life in uk</span>
-              <h2 class="mb-0 text-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Learn More
-                About Investing In UK By Downloading Our Guide Today</h2>
-              <a href="javascript:void(0)" class="btn bg-white" data-aos="fade-up" data-aos-delay="300"
-                data-aos-duration="1000">Download Guide</a>
+                data-aos-delay="100" data-aos-duration="1000">
+                Life in uk
+              </span>
+
+              <h2 class="mb-0 text-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                Learn More About Investing In UK By Downloading Our Guide Today
+              </h2>
+
+              <a href="javascript:void(0)" class="btn bg-white text-primary fw-bold" data-aos="fade-up"
+                data-aos-delay="300" data-aos-duration="1000">
+                Download Guide
+              </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -866,7 +1621,7 @@
     <section class="our-customers bg-light-gray py-10 py-md-5 py-lg-12 py-xl-14">
       <div class="container">
         <div class="vstack gap-5">
-          <div class="vstack align-items-center gap-8">
+          <div class="vstack align-items-center text-center gap-8">
             <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
               data-aos-delay="200" data-aos-duration="1000">Satisfaction of our customers</span>
             <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">What Our Customers Say
@@ -1873,35 +2628,53 @@
     <!--  Download Guide Section -->
     <section class="download-guide py-10 py-md-5 py-lg-12 py-xl-14">
       <div class="container">
-        <div class="row gap-10 gap-md-5 gap-xl-0">
+        <div class="row gap-4 gap-xl-0">
           <div class="col-xl-6">
             <div class="vstack gap-10">
               <div class="vstack align-items-start gap-8 me-lg-9">
                 <span class="badge bg-secondary-subtle text-dark text-uppercase fs-3" data-aos="fade-up"
                   data-aos-delay="200" data-aos-duration="1000">Enquire Now</span>
-                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Request More Information</h2>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Request More
+                  Information</h2>
                 <p class="mb-0 fs-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                  We work with a pool of trusted partners,wealth managers, Financial Advisors, and Agents giving their clients access to best-in-class residential property investment. Enquire today and one of our experts will be in touch to provide further information 
+                  We work with a pool of trusted partners,wealth managers, Financial Advisors, and Agents giving their
+                  clients access to best-in-class residential property investment. Enquire today and one of our experts
+                  will be in touch to provide further information
                 </p>
               </div>
               <hr class="my-0 w-25" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
               <div class="vstack gap-8" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <h6 class="mb-0">Follow us on social media</h6>
                 <ul class="list-unstyled social-media d-flex align-items-center gap-7 mb-0">
-                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram">
-                    <a href="javascript:void(0)" class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Instagram">
+                    <a href="javascript:void(0)"
+                      class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon
+                        icon="mdi:instagram"></iconify-icon></a>
                   </li>
-                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Facebook">
-                    <a href="javascript:void(0)" class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon icon="ic:twotone-facebook"></iconify-icon></a>
+                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Facebook">
+                    <a href="javascript:void(0)"
+                      class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon
+                        icon="ic:twotone-facebook"></iconify-icon></a>
                   </li>
-                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="YouTube">
-                    <a href="javascript:void(0)" class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon icon="tabler:brand-youtube-filled"></iconify-icon></a>
+                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="YouTube">
+                    <a href="javascript:void(0)"
+                      class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon
+                        icon="tabler:brand-youtube-filled"></iconify-icon></a>
                   </li>
-                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Linkedin">
-                    <a href="javascript:void(0)" class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Linkedin">
+                    <a href="javascript:void(0)"
+                      class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon
+                        icon="mdi:linkedin"></iconify-icon></a>
                   </li>
-                   <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Twitter">
-                    <a href="javascript:void(0)" class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon icon="ri:twitter-x-fill"></iconify-icon></a>
+                  <li class="position-relative" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Twitter">
+                    <a href="javascript:void(0)"
+                      class="social-icon round-48 bg-primary-subtle rounded-16 fs-10 hstack justify-content-center"><iconify-icon
+                        icon="ri:twitter-x-fill"></iconify-icon></a>
                   </li>
                 </ul>
               </div>
@@ -1911,13 +2684,15 @@
                   <div class="vstack gap-8 mb-10" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
                     <h6 class="mb-0">Manchester</h6>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:phone-bold"></iconify-icon>
                       </div>
                       <a class="fs-5 link-hover" href="tel:+443308281540">+44 330 8281540</a>
                     </div>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:map-point-bold"></iconify-icon>
                       </div>
                       <p class="fs-5 mb-0">Commercial Unit 1, 52 Trinity Way,
@@ -1929,13 +2704,15 @@
                   <div class="vstack gap-8 mb-10" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
                     <h6 class="mb-0">Dubai</h6>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:phone-bold"></iconify-icon>
                       </div>
                       <a class="fs-5 link-hover" href="tel:+97145686572">+971 4 568 6572</a>
                     </div>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:map-point-bold"></iconify-icon>
                       </div>
                       <p class="fs-5 mb-0">501 Swiss tower, Cluster Y,
@@ -1947,13 +2724,15 @@
                   <div class="vstack gap-8 mb-10" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
                     <h6 class="mb-0">Honk Kong</h6>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:phone-bold"></iconify-icon>
                       </div>
                       <a class="fs-5 link-hover" href="tel:+85295428292">+852 9542 8292</a>
                     </div>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:map-point-bold"></iconify-icon>
                       </div>
                       <p class="fs-5 mb-0">Level 20, One IFC Hong Kong,
@@ -1966,14 +2745,16 @@
                   <div class="vstack gap-8" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
                     <h6 class="mb-0">Nairobi</h6>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:phone-bold"></iconify-icon>
                       </div>
                       <a class="fs-5 link-hover" href="tel:+44(0)2031984370">+44 (0) 203 198
                         4370</a>
                     </div>
                     <div class="hstack gap-7">
-                      <div class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
+                      <div
+                        class="bg-primary-subtle round-32 flex-shrink-0 rounded-12 fs-8 d-flex align-items-center justify-content-center">
                         <iconify-icon class="hstack" icon="solar:map-point-bold"></iconify-icon>
                       </div>
                       <p class="fs-5 mb-0">Fifth Floor. Kindaruma Road.
@@ -1981,7 +2762,7 @@
                     </div>
                   </div>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
           <div class="col-xl-6">
@@ -2046,8 +2827,10 @@
                     <div class="col-12">
                       <div class="mb-4">
                         <p class="mb-0 fs-4">
-                          Baron & Cabot requires the contact information you provide to reach out regarding our property investments, services, and market insights. 
-                          You may unsubscribe from these communications at any time. For more details on how to opt out and to learn about our privacy 
+                          Baron & Cabot requires the contact information you provide to reach out regarding our property
+                          investments, services, and market insights.
+                          You may unsubscribe from these communications at any time. For more details on how to opt out
+                          and to learn about our privacy
                           practices and commitment to safeguarding your information, please review our Privacy Policy.
                         </p>
                       </div>
@@ -2067,70 +2850,93 @@
       <div class="container">
         <div class="vstack gap-5">
           <div class="vstack align-items-center gap-4">
-            <span class="badge bg-secondary-subtle text-white text-uppercase fs-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">More from us</span>
+            <span class="badge bg-secondary-subtle text-white text-uppercase fs-3" data-aos="fade-up"
+              data-aos-delay="200" data-aos-duration="1000">More from us</span>
             <h2 class="mb-0 text-white text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
               Featured Projects</h2>
-            <p class="mb-0 text-white text-opacity-75" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Luxury Amenities on your Doorstep</p>
+            <p class="mb-0 text-white text-opacity-75" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+              Luxury Amenities on your Doorstep</p>
           </div>
           <div class="row">
             <div class="col-md-6 col-xl-4">
-              <div class="card porject-item position-relative overflow-hidden rounded-20 shadow-none" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <div class="card porject-item position-relative overflow-hidden rounded-20 shadow-none" data-aos="fade-up"
+                data-aos-delay="100" data-aos-duration="1000">
                 <div class="porject-img position-relative overflow-hidden">
                   <img src="../assets/images/project/project-1.jpg" alt="project" class="img-fluid object-fit-cover">
-                  <div class="vstack card-body w-100 h-100 gap-4 justify-content-between position-absolute top-0 start-0 z-1">
+                  <div
+                    class="vstack card-body w-100 h-100 gap-4 justify-content-between position-absolute top-0 start-0 z-1">
                     <div class="hstack flex-wrap gap-2">
                       <span class="badge text-bg-secondary text-dark text-uppercase">Off Plan</span>
-                      <span class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">10%
+                      <span
+                        class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">10%
                         Office</span>
-                      <span class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">5.25
+                      <span
+                        class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">5.25
                         Yields</span>
                     </div>
                     <div class="vstack gap-6 flex-grow-0">
-                      <span class="badge bg-primary fs-5 rounded-pill py-2 px-3 bg-opacity-25 text-white hstack gap-2 w-fit"><iconify-icon icon="solar:map-point-linear" class="fs-9"></iconify-icon>London</span>
+                      <span
+                        class="badge bg-primary fs-5 rounded-pill py-2 px-3 bg-opacity-25 text-white hstack gap-2 w-fit"><iconify-icon
+                          icon="solar:map-point-linear" class="fs-9"></iconify-icon>London</span>
                       <h5 class="mb-0 fw-medium text-white">Claremont Quarter</h5>
-                      <h3 class="mb-0 text-white fw-bold hstack justify-content-between gap-2">£439,995 <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon></h3>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card porject-item position-relative overflow-hidden rounded-20 shadow-none" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <div class="porject-img position-relative overflow-hidden">
-                  <img src="../assets/images/project/project-2.jpg" alt="project" class="img-fluid object-fit-cover">
-                  <div class="vstack card-body w-100 h-100 gap-4 justify-content-between position-absolute top-0 start-0 z-1">
-                    <div class="hstack flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-25 text-white text-uppercase">Completed</span>
-                      <span class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">10%
-                        Office</span>
-                      <span class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">5.25
-                        Yields</span>
-                    </div>
-                    <div class="vstack gap-6 flex-grow-0">
-                      <span class="badge bg-primary fs-5 rounded-pill py-2 px-3 bg-opacity-25 text-white hstack gap-2 w-fit"><iconify-icon icon="solar:map-point-linear" class="fs-9"></iconify-icon>London</span>
-                      <h5 class="mb-0 fw-medium text-white">Claremont Quarter</h5>
-                      <h3 class="mb-0 text-white fw-bold hstack justify-content-between gap-2">£439,995 <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon></h3>
+                      <h3 class="mb-0 text-white fw-bold hstack justify-content-between gap-2">£439,995 <iconify-icon
+                          icon="solar:alt-arrow-right-linear"></iconify-icon></h3>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="card porject-item position-relative overflow-hidden rounded-20 shadow-none mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+              <div class="card porject-item position-relative overflow-hidden rounded-20 shadow-none" data-aos="fade-up"
+                data-aos-delay="200" data-aos-duration="1000">
                 <div class="porject-img position-relative overflow-hidden">
-                  <img src="../assets/images/project/project-3.jpg" alt="project" class="img-fluid object-fit-cover">
-                  <div class="vstack card-body w-100 h-100 gap-4 justify-content-between position-absolute top-0 start-0 z-1">
+                  <img src="../assets/images/project/project-2.jpg" alt="project" class="img-fluid object-fit-cover">
+                  <div
+                    class="vstack card-body w-100 h-100 gap-4 justify-content-between position-absolute top-0 start-0 z-1">
                     <div class="hstack flex-wrap gap-2">
-                      <span class="badge text-bg-secondary text-dark text-uppercase">Off Plan</span>
-                      <span class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">10%
+                      <span class="badge bg-primary bg-opacity-25 text-white text-uppercase">Completed</span>
+                      <span
+                        class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">10%
                         Office</span>
-                      <span class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">5.25
+                      <span
+                        class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">5.25
                         Yields</span>
                     </div>
                     <div class="vstack gap-6 flex-grow-0">
-                      <span class="badge bg-primary fs-5 rounded-pill py-2 px-3 bg-opacity-25 text-white hstack gap-2 w-fit"><iconify-icon icon="solar:map-point-linear" class="fs-9"></iconify-icon>London</span>
+                      <span
+                        class="badge bg-primary fs-5 rounded-pill py-2 px-3 bg-opacity-25 text-white hstack gap-2 w-fit"><iconify-icon
+                          icon="solar:map-point-linear" class="fs-9"></iconify-icon>London</span>
                       <h5 class="mb-0 fw-medium text-white">Claremont Quarter</h5>
-                      <h3 class="mb-0 text-white fw-bold hstack justify-content-between gap-2">£439,995 <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon></h3>
+                      <h3 class="mb-0 text-white fw-bold hstack justify-content-between gap-2">£439,995 <iconify-icon
+                          icon="solar:alt-arrow-right-linear"></iconify-icon></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card porject-item position-relative overflow-hidden rounded-20 shadow-none mb-0"
+                data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="porject-img position-relative overflow-hidden">
+                  <img src="../assets/images/project/project-3.jpg" alt="project" class="img-fluid object-fit-cover">
+                  <div
+                    class="vstack card-body w-100 h-100 gap-4 justify-content-between position-absolute top-0 start-0 z-1">
+                    <div class="hstack flex-wrap gap-2">
+                      <span class="badge text-bg-secondary text-dark text-uppercase">Off Plan</span>
+                      <span
+                        class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">10%
+                        Office</span>
+                      <span
+                        class="badge bg-white bg-opacity-50 text-dark text-uppercase border border-primary border-opacity-10">5.25
+                        Yields</span>
+                    </div>
+                    <div class="vstack gap-6 flex-grow-0">
+                      <span
+                        class="badge bg-primary fs-5 rounded-pill py-2 px-3 bg-opacity-25 text-white hstack gap-2 w-fit"><iconify-icon
+                          icon="solar:map-point-linear" class="fs-9"></iconify-icon>London</span>
+                      <h5 class="mb-0 fw-medium text-white">Claremont Quarter</h5>
+                      <h3 class="mb-0 text-white fw-bold hstack justify-content-between gap-2">£439,995 <iconify-icon
+                          icon="solar:alt-arrow-right-linear"></iconify-icon></h3>
                     </div>
                   </div>
                 </div>
@@ -2507,6 +3313,7 @@
   <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
   <script src="../assets/libs/aos-master/dist/aos.js"></script>
   <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/index2.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>

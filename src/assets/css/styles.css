@@ -23289,7 +23289,8 @@ textarea.form-control-lg {
 .vivere-residences img,
 .banner-slider .item img,
 .porject-item .porject-img img,
-.vivere-residences-img img {
+.vivere-residences-img img,
+.available-units-item-img img {
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -23299,7 +23300,8 @@ textarea.form-control-lg {
 .vivere-residences > img,
 .banner-slider .item > img,
 .porject-item .porject-img > img,
-.vivere-residences-img > img {
+.vivere-residences-img > img,
+.available-units-item-img > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -23313,7 +23315,8 @@ textarea.form-control-lg {
 .banner-slider .item:hover > img,
 .vivere-residences:hover img,
 .gallery-slider .item:hover img,
-.construction-update-slider .item:hover img {
+.construction-update-slider .item:hover img,
+.available-units-item-img:hover img {
   transform: scale(1.1);
 }
 
@@ -23454,6 +23457,22 @@ textarea.form-control-lg {
   color: var(--bs-white) !important;
 }
 
+.available-units .nav-pills .nav-link {
+  color: var(--bs-dark);
+}
+
+.available-units .nav-pills .nav-link.active,
+.available-units .nav-pills .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+}
+
+.available-units-item-img::before {
+  content: "";
+  display: block;
+  padding-top: 61%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23528,7 +23547,7 @@ ul {
 }
 
 .rounded-12 {
-  border-radius: 12px;
+  border-radius: 12px !important;
 }
 
 .rounded-16 {
