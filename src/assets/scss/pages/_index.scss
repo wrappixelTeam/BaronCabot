@@ -14,7 +14,8 @@
 .banner-slider .item img,
 .porject-item .porject-img img,
 .vivere-residences-img img,
-.available-units-item-img img {
+.available-units-item-img img,
+.details-page-img img {
     transition: all 0.2s ease;
     cursor: pointer;
 }
@@ -25,7 +26,8 @@
 .banner-slider .item>img,
 .porject-item .porject-img>img,
 .vivere-residences-img>img,
-.available-units-item-img>img {
+.available-units-item-img>img,
+.details-page-img>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +42,8 @@
 .vivere-residences:hover img,
 .gallery-slider .item:hover img,
 .construction-update-slider .item:hover img,
-.available-units-item-img:hover img {
+.available-units-item-img:hover img,
+.details-page-img:hover img {
     transform: scale(1.1);
 }
 
@@ -202,4 +205,14 @@
     content: "";
     display: block; 
     padding-top: 61%;
+}
+
+
+
+// Details Page Css
+
+.details-page-img::before {
+    content: "";
+    display: block;
+    padding-top: 117%;
 }

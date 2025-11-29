@@ -62,3 +62,7 @@
 .accordion-button:not(.collapsed) {
     box-shadow: inherit;
 }
+
+.custom-form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2em' height='2em' viewBox='0 0 24 24'%3E%3C!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m19 9l-7 6l-7-6'/%3E%3C/svg%3E");
+}
