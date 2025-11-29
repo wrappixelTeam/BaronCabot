@@ -188,18 +188,18 @@
     color: var(--bs-white) !important;
 }
 
-.available-units .nav-pills .nav-link {
-    color: var(--bs-dark);
+.scroll-tabs .nav-pills .nav-link {
+    color: var(--bs-dark); 
 }
 
-.available-units .nav-pills .nav-link.active,
-.available-units .nav-pills .nav-link:hover {
+.scroll-tabs .nav-pills .nav-link.active,
+.scroll-tabs .nav-pills .nav-link:hover {
     background-color: rgba($white, 0.4);
     font-weight: 600;
 }
 
 .available-units-item-img::before {
     content: "";
-    display: block;
+    display: block; 
     padding-top: 61%;
 }

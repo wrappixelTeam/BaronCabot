@@ -23457,12 +23457,12 @@ textarea.form-control-lg {
   color: var(--bs-white) !important;
 }
 
-.available-units .nav-pills .nav-link {
+.scroll-tabs .nav-pills .nav-link {
   color: var(--bs-dark);
 }
 
-.available-units .nav-pills .nav-link.active,
-.available-units .nav-pills .nav-link:hover {
+.scroll-tabs .nav-pills .nav-link.active,
+.scroll-tabs .nav-pills .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.4);
   font-weight: 600;
 }
